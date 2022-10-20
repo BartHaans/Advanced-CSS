@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+.testimonial {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1, 400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: white;
+  width: 400px;
+  height: 300px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.testimonial p {
+  color: dimgray;
+  font-size: 1.3em;
+  text-align: left;
+  line-height: 1.6;
+  padding: 30px;
+}
+.testimonial .testimonial-img {
+  justify-self: center;
+  width: 125px;
+  height: 125px;
+  border: 6px solid white;
+  border-radius: 50%;
+  transform: translateY(-20%);
+}
+
+.testimonial-footer {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: #686de0;
+  margin: 0 auto;
+  width: 400px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.testimonial-footer .name {
+  font-weight: lighter;
+  font-size: 1.6em;
+  letter-spacing: 2px;
+  padding-top: 80px;
+  color: white;
+  text-align: center;
+}
+.testimonial-footer p {
+  padding-top: 10px;
+  padding-bottom: 40px;
+  font-weight: lighter;
+  font-size: 1.3em;
+  color: #adafe3;
+  text-align: center;
+}
+
+.portfolio {
+  margin: 0 auto;
+  padding: 40px;
+  max-width: 1000px;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.portfolio .card {
+  position: relative;
+  background: #003242;
+  border-radius: 20px;
+}
+.portfolio .card .card-image {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+}
+.portfolio .card .button {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.portfolio .card .button .text {
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.card:hover .card-image {
+  transition: 0.5s ease;
+  opacity: 0;
+}
+
+.card:hover .button {
+  opacity: 1;
+  border-radius: 20px;
+}
+
+.icon-menu {
+  position: fixed;
+  top: 50%;
+  left: calc(100% - 50px);
+  list-style-type: none;
+  padding: 0;
+  transform: translateY(-50%);
+  min-width: 280px;
+}
+
+.icon-bar {
+  align-items: center;
+  transition: transform 0.3s linear;
+}
+
+.icon-bar i {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 15px;
+  text-align: left;
+  width: 60px;
+  transform: rotate(0deg);
+}
+
+.icon-bar a {
+  color: #fff;
+  padding: 0 10px;
+}
+
+.icon-bar:hover {
+  transform: translateX(calc(-100% + 50px));
+}
+
+.icon-bar.twitter {
+  background-color: #00aced;
+}
+
+.icon-bar.linkedin {
+  background-color: #007bb6;
+}
+
+.icon-bar.blog {
+  background-color: #e17b77;
+}
+
+.icon-bar.facebook {
+  background-color: #3b5998;
+}
+
+.icon-bar.github {
+  background-color: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: #686de0;
+  padding: 20px;
+}
+
+body {
+  background-color: #c3cfe2;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 100px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: black;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}/*# sourceMappingURL=styles.css.map */
